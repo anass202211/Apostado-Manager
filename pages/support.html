@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- SEO Meta Tags -->
+    <title>Support Center | Apostado Manager</title>
+    <meta name="title" content="Support Center | Apostado Manager">
+    <meta name="description" content="Need help with Apostado Manager? Join our Discord support server, read our setup documentation, or view our FAQ.">
+    
+    <!-- Theme & Icons -->
+    <link rel="manifest" href="../manifest.json">
+    <meta name="theme-color" content="#080710">
+    <link rel="icon" type="image/png" href="https://cdn.discordapp.com/icons/1376614588342341742/105e4bea65c423f10382c62469b911d5.png?size=256">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    
+    <!-- Icons (Lucide) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Preloader Screen -->
+    <div id="preloader" role="status" aria-label="Loading page">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-bar" id="progress-bar"></div>
+
+    <!-- Ambient Glow Overlays -->
+    <div class="ambient-glow"></div>
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Navigation Header -->
+    <header>
+        <div class="nav-container">
+            <a href="../index.html" class="logo-wrapper" id="nav-logo-link">
+                <img src="https://cdn.discordapp.com/icons/1376614588342341742/105e4bea65c423f10382c62469b911d5.png?size=256" alt="Apostado Manager Logo" class="logo-img">
+                <span class="logo-text">Apostado Manager</span>
+            </a>
+            
+            <nav aria-label="Primary Navigation">
+                <ul class="nav-menu">
+                    <li><a href="../index.html#features" class="nav-link">Features</a></li>
+                    <li><a href="../index.html#stats" class="nav-link">Statistics</a></li>
+                    <li><a href="../index.html#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="support.html" class="nav-link">Support</a></li>
+                    <li><a href="https://discord.gg/apos" target="_blank" class="nav-btn btn-ripple" id="nav-discord-invite">Invite Bot</a></li>
+                </ul>
+            </nav>
+            
+            <button class="hamburger" id="nav-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Support Header -->
+    <section class="support-hero">
+        <span class="hero-tagline">Apostado Help Center</span>
+        <h1 class="hero-title" style="font-size:3rem; margin-bottom:16px;">How can we <span>help you</span> today?</h1>
+        <p class="hero-desc" style="max-width:600px; margin:0 auto;">Join our official Discord community for real-time support, or browse our FAQ below to resolve common configuration questions.</p>
+    </section>
+
+    <!-- Support Core Cards -->
+    <section class="support-options">
+        <div class="support-card reveal" id="support-discord">
+            <div class="support-icon"><i data-lucide="message-square"></i></div>
+            <h3>Discord Support</h3>
+            <p>Get in touch with our live support agents, submit suggestions, report bugs, and chat with other guild managers.</p>
+            <a href="https://discord.gg/apos" target="_blank" class="btn-premium btn-primary btn-ripple" style="width:100%;">
+                Join Support Server
+            </a>
+        </div>
+
+        <div class="support-card reveal" id="support-docs">
+            <div class="support-icon"><i data-lucide="book-open"></i></div>
+            <h3>Documentation</h3>
+            <p>Explore comprehensive step-by-step guides on configuring matches creation panels, points systems, and helper tokens.</p>
+            <a href="../index.html#features" class="btn-premium btn-secondary btn-ripple" style="width:100%;">
+                Read Setup Guide
+            </a>
+        </div>
+
+        <div class="support-card reveal" id="support-email">
+            <div class="support-icon"><i data-lucide="mail"></i></div>
+            <h3>Direct Contact</h3>
+            <p>Having account verification or privacy issues? Feel free to contact our development team via email support.</p>
+            <a href="mailto:support@apos.gg" class="btn-premium btn-secondary btn-ripple" style="width:100%;">
+                Email Support Team
+            </a>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion section -->
+    <section class="faq" id="faq" style="padding-top:0;">
+        <div class="faq-container reveal">
+            <div class="section-header" style="margin-bottom:40px;">
+                <h2 class="section-title" style="font-size:2rem;">Support FAQ</h2>
+                <p class="section-desc">Common technical questions and setup issues resolved.</p>
+            </div>
+            
+            <div class="faq-item" id="faq-s1">
+                <button class="faq-question">
+                    <span>Why aren't nickname rank prefixes updating automatically?</span>
+                    <i data-lucide="plus" class="faq-icon"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>To avoid hitting Discord API rate limits, periodic leaderboard nickname updates have been disabled. User nickname rank prefixes now update <strong>immediately after points are awarded</strong> at the end of matches. If point additions still don't update nicknames, make sure the bot's highest role is positioned above the target user's role in your Discord Server Settings.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" id="faq-s2">
+                <button class="faq-question">
+                    <span>How do I set up helper bots in my server?</span>
+                    <i data-lucide="plus" class="faq-icon"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>To add helper bots, create up to 5 individual Discord bots in the Discord Developer Portal, invite them all to your server, and set their credentials in your environment configurations (TOKEN_1 to TOKEN_5). The bot's Rank Manager will automatically log them in and distribute nickname updates across them.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" id="faq-s3">
+                <button class="faq-question">
+                    <span>How do I configure command permissions for my staff?</span>
+                    <i data-lucide="plus" class="faq-icon"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Use the prefix commands <code>!addperm @role permissionName</code> or <code>!removeperm @role permissionName</code> to grant or revoke specific command authorization (such as <code>cancel</code>, <code>mvp</code>, <code>blacklist</code>, or <code>coins</code>) to custom roles.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-info">
+                <a href="../index.html" class="footer-info-logo" id="footer-logo-link">
+                    <img src="https://cdn.discordapp.com/icons/1376614588342341742/105e4bea65c423f10382c62469b911d5.png?size=256" alt="Apostado Manager Logo" class="logo-img" style="width:36px; height:36px;">
+                    <span class="logo-text" style="font-size:1.15rem;">Apostado Manager</span>
+                </a>
+                <p class="footer-desc">Professional management bot built for Free Fire Discord servers. Bringing structure, security, tournaments, and fun to your guild.</p>
+            </div>
+            
+            <div class="footer-links-column">
+                <span class="footer-column-title">Resources</span>
+                <ul class="footer-links">
+                    <li><a href="https://discord.gg/apos" target="_blank" class="footer-link">Invite Bot</a></li>
+                    <li><a href="support.html" class="footer-link">Support Server</a></li>
+                    <li><a href="../index.html#features" class="footer-link">Bot Features</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-column">
+                <span class="footer-column-title">Support</span>
+                <ul class="footer-links">
+                    <li><a href="support.html" class="footer-link">Help Center</a></li>
+                    <li><a href="support.html#faq" class="footer-link">FAQ</a></li>
+                    <li><a href="https://discord.gg/apos" target="_blank" class="footer-link">Discord Support</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-column">
+                <span class="footer-column-title">Legal</span>
+                <ul class="footer-links">
+                    <li><a href="privacy.html" class="footer-link">Privacy Policy</a></li>
+                    <li><a href="terms.html" class="footer-link">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Apostado Manager. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="privacy.html" class="footer-link">Privacy</a>
+                <a href="terms.html" class="footer-link">Terms</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Scroll back to top">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <!-- Main JS -->
+    <script src="../assets/js/main.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

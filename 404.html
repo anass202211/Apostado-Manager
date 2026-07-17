@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- SEO Meta Tags -->
+    <title>404 - Page Not Found | Apostado Manager</title>
+    <meta name="title" content="404 - Page Not Found | Apostado Manager">
+    <meta name="description" content="The page you are looking for does not exist. Return home or contact support.">
+    
+    <!-- Theme & Icons -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#080710">
+    <link rel="icon" type="image/png" href="https://cdn.discordapp.com/icons/1376614588342341742/105e4bea65c423f10382c62469b911d5.png?size=256">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Icons (Lucide) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Preloader Screen -->
+    <div id="preloader" role="status" aria-label="Loading page">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Ambient Glow Overlays -->
+    <div class="ambient-glow"></div>
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Navigation Header -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo-wrapper" id="nav-logo-link">
+                <img src="https://cdn.discordapp.com/icons/1376614588342341742/105e4bea65c423f10382c62469b911d5.png?size=256" alt="Apostado Manager Logo" class="logo-img">
+                <span class="logo-text">Apostado Manager</span>
+            </a>
+            
+            <nav aria-label="Primary Navigation">
+                <ul class="nav-menu">
+                    <li><a href="index.html#features" class="nav-link">Features</a></li>
+                    <li><a href="index.html#stats" class="nav-link">Statistics</a></li>
+                    <li><a href="index.html#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="pages/support.html" class="nav-link">Support</a></li>
+                    <li><a href="https://discord.gg/apos" target="_blank" class="nav-btn btn-ripple" id="nav-discord-invite">Invite Bot</a></li>
+                </ul>
+            </nav>
+            
+            <button class="hamburger" id="nav-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Error Page Core -->
+    <main class="error-page">
+        <div class="error-code">404</div>
+        <h1 class="error-title">Page Not Found</h1>
+        <p class="error-desc">Oops! The page you are looking for has been moved, deleted, or never existed in the first place.</p>
+        <a href="index.html" class="btn-premium btn-primary btn-ripple" id="error-btn-home">
+            <i data-lucide="home"></i> Return to Safety
+        </a>
+    </main>
+
+    <!-- Footer -->
+    <footer style="margin-top:auto;">
+        <div class="footer-grid">
+            <div class="footer-info">
+                <a href="index.html" class="footer-info-logo" id="footer-logo-link">
+                    <img src="https://cdn.discordapp.com/icons/1376614588342341742/105e4bea65c423f10382c62469b911d5.png?size=256" alt="Apostado Manager Logo" class="logo-img" style="width:36px; height:36px;">
+                    <span class="logo-text" style="font-size:1.15rem;">Apostado Manager</span>
+                </a>
+                <p class="footer-desc">Professional management bot built for Free Fire Discord servers. Bringing structure, security, tournaments, and fun to your guild.</p>
+            </div>
+            
+            <div class="footer-links-column">
+                <span class="footer-column-title">Resources</span>
+                <ul class="footer-links">
+                    <li><a href="https://discord.gg/apos" target="_blank" class="footer-link">Invite Bot</a></li>
+                    <li><a href="pages/support.html" class="footer-link">Support Server</a></li>
+                    <li><a href="index.html#features" class="footer-link">Bot Features</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-column">
+                <span class="footer-column-title">Support</span>
+                <ul class="footer-links">
+                    <li><a href="pages/support.html" class="footer-link">Help Center</a></li>
+                    <li><a href="pages/support.html#faq" class="footer-link">FAQ</a></li>
+                    <li><a href="https://discord.gg/apos" target="_blank" class="footer-link">Discord Support</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-column">
+                <span class="footer-column-title">Legal</span>
+                <ul class="footer-links">
+                    <li><a href="pages/privacy.html" class="footer-link">Privacy Policy</a></li>
+                    <li><a href="pages/terms.html" class="footer-link">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Apostado Manager. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="pages/privacy.html" class="footer-link">Privacy</a>
+                <a href="pages/terms.html" class="footer-link">Terms</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- SEO Meta Tags -->
+    <title>Privacy Policy | Apostado Manager</title>
+    <meta name="title" content="Privacy Policy | Apostado Manager">
+    <meta name="description" content="Official Privacy Policy for Apostado Manager. Understand how we collect, store, and protect user data within Free Fire Discord guilds.">
+    
+    <!-- Theme & Icons -->
+    <link rel="manifest" href="../manifest.json">
+    <meta name="theme-color" content="#080710">
+    <link rel="icon" type="image/png" href="https://cdn.discordapp.com/icons/1376614588342341742/105e4bea65c423f10382c62469b911d5.png?size=256">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    
+    <!-- Icons (Lucide) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Preloader Screen -->
+    <div id="preloader" role="status" aria-label="Loading page">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-bar" id="progress-bar"></div>
+
+    <!-- Ambient Glow Overlays -->
+    <div class="ambient-glow"></div>
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Navigation Header -->
+    <header>
+        <div class="nav-container">
+            <a href="../index.html" class="logo-wrapper" id="nav-logo-link">
+                <img src="https://cdn.discordapp.com/icons/1376614588342341742/105e4bea65c423f10382c62469b911d5.png?size=256" alt="Apostado Manager Logo" class="logo-img">
+                <span class="logo-text">Apostado Manager</span>
+            </a>
+            
+            <nav aria-label="Primary Navigation">
+                <ul class="nav-menu">
+                    <li><a href="../index.html#features" class="nav-link">Features</a></li>
+                    <li><a href="../index.html#stats" class="nav-link">Statistics</a></li>
+                    <li><a href="../index.html#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="support.html" class="nav-link">Support</a></li>
+                    <li><a href="https://discord.gg/apos" target="_blank" class="nav-btn btn-ripple" id="nav-discord-invite">Invite Bot</a></li>
+                </ul>
+            </nav>
+            
+            <button class="hamburger" id="nav-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="legal-page">
+        <h1 class="legal-title">Privacy Policy</h1>
+        <div class="legal-meta">Last Updated: July 18, 2026 | Effective Date: July 18, 2026</div>
+        
+        <div class="legal-content">
+            <section id="introduction">
+                <h2 class="legal-section-title">1. Introduction</h2>
+                <p>Welcome to Apostado Manager ("the Bot", "we", "our"). We are committed to protecting the privacy and personal data of the users of our bot within the Discord platform. This Privacy Policy outlines what information is collected, how it is processed, stored, and the rights you retain regarding your data. This policy is written in full compliance with Discord Developer Terms of Service and Discord Developer Policy requirements.</p>
+            </section>
+
+            <section id="data-collection">
+                <h2 class="legal-section-title">2. Information We Collect</h2>
+                <p>To provide gaming management services, moderation utilities, and automated tournament features, the Bot processes and stores the following specific categories of Discord data:</p>
+                <ul>
+                    <li><strong>Discord User Identifier (User ID)</strong>: Used as a unique key to associate your gaming stats, tournament scores, blacklists, and squad rosters.</li>
+                    <li><strong>Discord Username and Tag</strong>: Used for display purposes within lists, leaderboards, and logs.</li>
+                    <li><strong>Guild Role Identifiers (Role IDs)</strong>: Stored to automate role granting/revocation (e.g., Active Player roles, Blacklist roles, Staff authorization levels).</li>
+                    <li><strong>Guild Settings & Commands Configuration</strong>: Admin configurations for logging channels, ticket panel settings, coins rewards systems, and command authorization levels.</li>
+                    <li><strong>Bot Stats Data</strong>: In-game metrics including total games played, matches won/lost, coins accumulated, MVP selection counts, and blacklist history.</li>
+                    <li><strong>Ticket Transcripts</strong>: Temporary texts generated from closed support ticket channels containing message logs to help server owners maintain moderation records.</li>
+                </ul>
+            </section>
+
+            <section id="data-usage">
+                <h2 class="legal-section-title">3. How We Use Your Data</h2>
+                <p>All data processed and stored by the Bot is used exclusively to facilitate features requested by the Guild Administrators. We use your data for:</p>
+                <ul>
+                    <li>Creating and tracking matches, squads, and leaderboards.</li>
+                    <li>Synchronizing user nicknames and assigning rank prefixes (e.g., RANK # | Username) as position changes.</li>
+                    <li>Enforcing server security by tracking blacklisted users and restricting access.</li>
+                    <li>Providing ticket channels and routing support logs to configured channels.</li>
+                    <li>Maintaining real-time logs of point modifications and commands executed by staff.</li>
+                </ul>
+                <p>We do NOT sell, lease, or share user data with any third-party marketing companies, advertisers, or developers.</p>
+            </section>
+
+            <section id="data-storage">
+                <h2 class="legal-section-title">4. Data Retention & Security</h2>
+                <p>All stored variables are kept inside secure, production-grade, firewalled MongoDB database instances. We apply strict security protocols to prevent unauthorized access, manipulation, or leakage of data.</p>
+                <p>Data is stored for as long as the Bot remains inside your Discord server, or until a server administrator runs explicit data-clearing commands (e.g., resetting leaderboards). If the Bot is removed (kicked/banned) from a guild, all database records associated with that specific Guild ID are flagged and purged during our routine database maintenance cycles.</p>
+            </section>
+
+            <section id="user-rights">
+                <h2 class="legal-section-title">5. Data Deletion and Your Rights</h2>
+                <p>Under Discord Developer guidelines and data privacy regulations, you have full control over your stored variables. You may:</p>
+                <ul>
+                    <li>Request to view all stored database entries connected to your user ID.</li>
+                    <li>Request the immediate removal of all personal records (points, coin stats, active squad associations) from our databases.</li>
+                </ul>
+                <p>To request data deletion, you can contact the server administrators of the Discord guild utilizing the Bot (who can use command lines to reset data) or open a support request in our official support server at <a href="https://discord.gg/apos" target="_blank" class="footer-link">https://discord.gg/apos</a>. All data deletion requests are completed within 48 hours of verification.</p>
+            </section>
+
+            <section id="updates">
+                <h2 class="legal-section-title">6. Policy Updates</h2>
+                <p>We may update this Privacy Policy periodically to reflect changes in our bot features or Discord policies. When changes are made, the revision date at the top of this page will be updated. We encourage users to check this page periodically for updates.</p>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-info">
+                <a href="../index.html" class="footer-info-logo" id="footer-logo-link">
+                    <img src="https://cdn.discordapp.com/icons/1376614588342341742/105e4bea65c423f10382c62469b911d5.png?size=256" alt="Apostado Manager Logo" class="logo-img" style="width:36px; height:36px;">
+                    <span class="logo-text" style="font-size:1.15rem;">Apostado Manager</span>
+                </a>
+                <p class="footer-desc">Professional management bot built for Free Fire Discord servers. Bringing structure, security, tournaments, and fun to your guild.</p>
+            </div>
+            
+            <div class="footer-links-column">
+                <span class="footer-column-title">Resources</span>
+                <ul class="footer-links">
+                    <li><a href="https://discord.gg/apos" target="_blank" class="footer-link">Invite Bot</a></li>
+                    <li><a href="support.html" class="footer-link">Support Server</a></li>
+                    <li><a href="../index.html#features" class="footer-link">Bot Features</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-column">
+                <span class="footer-column-title">Support</span>
+                <ul class="footer-links">
+                    <li><a href="support.html" class="footer-link">Help Center</a></li>
+                    <li><a href="support.html#faq" class="footer-link">FAQ</a></li>
+                    <li><a href="https://discord.gg/apos" target="_blank" class="footer-link">Discord Support</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-column">
+                <span class="footer-column-title">Legal</span>
+                <ul class="footer-links">
+                    <li><a href="privacy.html" class="footer-link">Privacy Policy</a></li>
+                    <li><a href="terms.html" class="footer-link">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Apostado Manager. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="privacy.html" class="footer-link">Privacy</a>
+                <a href="terms.html" class="footer-link">Terms</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Scroll back to top">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <!-- Main JS -->
+    <script src="../assets/js/main.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

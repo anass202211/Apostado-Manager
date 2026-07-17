@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- SEO Meta Tags -->
+    <title>Terms of Service | Apostado Manager</title>
+    <meta name="title" content="Terms of Service | Apostado Manager">
+    <meta name="description" content="Official Terms of Service for Apostado Manager. Understand the conditions of using our bot within your Discord servers.">
+    
+    <!-- Theme & Icons -->
+    <link rel="manifest" href="../manifest.json">
+    <meta name="theme-color" content="#080710">
+    <link rel="icon" type="image/png" href="https://cdn.discordapp.com/icons/1376614588342341742/105e4bea65c423f10382c62469b911d5.png?size=256">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    
+    <!-- Icons (Lucide) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Preloader Screen -->
+    <div id="preloader" role="status" aria-label="Loading page">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-bar" id="progress-bar"></div>
+
+    <!-- Ambient Glow Overlays -->
+    <div class="ambient-glow"></div>
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Navigation Header -->
+    <header>
+        <div class="nav-container">
+            <a href="../index.html" class="logo-wrapper" id="nav-logo-link">
+                <img src="https://cdn.discordapp.com/icons/1376614588342341742/105e4bea65c423f10382c62469b911d5.png?size=256" alt="Apostado Manager Logo" class="logo-img">
+                <span class="logo-text">Apostado Manager</span>
+            </a>
+            
+            <nav aria-label="Primary Navigation">
+                <ul class="nav-menu">
+                    <li><a href="../index.html#features" class="nav-link">Features</a></li>
+                    <li><a href="../index.html#stats" class="nav-link">Statistics</a></li>
+                    <li><a href="../index.html#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="support.html" class="nav-link">Support</a></li>
+                    <li><a href="https://discord.gg/apos" target="_blank" class="nav-btn btn-ripple" id="nav-discord-invite">Invite Bot</a></li>
+                </ul>
+            </nav>
+            
+            <button class="hamburger" id="nav-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="legal-page">
+        <h1 class="legal-title">Terms of Service</h1>
+        <div class="legal-meta">Last Updated: July 18, 2026 | Effective Date: July 18, 2026</div>
+        
+        <div class="legal-content">
+            <section id="agreement">
+                <h2 class="legal-section-title">1. Acceptance of Terms</h2>
+                <p>By inviting Apostado Manager ("the Bot") to your Discord server or interacting with its features, messages, or commands, you agree to be bound by these Terms of Service ("Terms") and our Privacy Policy. If you do not agree with any part of these Terms, you must immediately remove the Bot from your guild and cease all interactions with it.</p>
+            </section>
+
+            <section id="license">
+                <h2 class="legal-section-title">2. Grant of License & Usage Rights</h2>
+                <p>We grant Discord Guild Administrators a non-exclusive, non-transferable, revocable license to utilize the Bot's functions within their specific Discord servers. Any commercial reselling, unauthorized reverse engineering, modification, or direct source extraction of the Bot code is strictly prohibited.</p>
+            </section>
+
+            <section id="user-conduct">
+                <h2 class="legal-section-title">3. User Conduct and Restrictions</h2>
+                <p>When interacting with the Bot, users are prohibited from:</p>
+                <ul>
+                    <li>Attempting to exploit, bypass, or spam the command routing systems, ticket channels, or verification modals.</li>
+                    <li>Using macros, scripts, or automate clients to inflate point balances, leaderboard metrics, or coin systems.</li>
+                    <li>Submitting fraudulent user reports, ticket complaints, or false blacklist requests.</li>
+                    <li>Using the Bot's custom nickname rank features to display usernames containing offensive, hateful, or abusive language.</li>
+                    <li>Violating official Discord Developer Terms of Service or Discord Community Guidelines.</li>
+                </ul>
+                <p>Failure to comply with these rules can result in the user being blacklisted from using the Bot across all participating guilds.</p>
+            </section>
+
+            <section id="disclaimer">
+                <h2 class="legal-section-title">4. Disclaimer of Affiliation</h2>
+                <p>Apostado Manager is a third-party management tool created by independent developers. We are in no way officially affiliated, associated, authorized, endorsed by, or in any way connected with:</p>
+                <ul>
+                    <li><strong>Garena Free Fire</strong> or Garena International.</li>
+                    <li><strong>Discord Inc.</strong> or Discord Official Developer Group.</li>
+                </ul>
+                <p>All game names, trademarks, logo files, and characters remain the intellectual property of their respective owners.</p>
+            </section>
+
+            <section id="limitation">
+                <h2 class="legal-section-title">5. Limitation of Liability & Service Disclaimer</h2>
+                <p>The Bot is provided "as is" and "as available" without any warranties of any kind, either express or implied. We do not guarantee that the service will be uninterrupted, secure, or free from minor software bugs.</p>
+                <p>In no event shall the Bot developers or team members be held liable for any direct, indirect, incidental, or consequential damages (including, but not limited to, loss of server database info, role synchronization issues, tournament point data loss, or server disruptions) arising out of the use or inability to use the Bot.</p>
+            </section>
+
+            <section id="termination">
+                <h2 class="legal-section-title">6. Service Termination</h2>
+                <p>We reserve the right to suspend or terminate the Bot's availability for specific Discord servers, user accounts, or entire regions without prior notice, if we believe the usage patterns are violating these Terms, abusing resource limits, or creating security hazards to our databases.</p>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-info">
+                <a href="../index.html" class="footer-info-logo" id="footer-logo-link">
+                    <img src="https://cdn.discordapp.com/icons/1376614588342341742/105e4bea65c423f10382c62469b911d5.png?size=256" alt="Apostado Manager Logo" class="logo-img" style="width:36px; height:36px;">
+                    <span class="logo-text" style="font-size:1.15rem;">Apostado Manager</span>
+                </a>
+                <p class="footer-desc">Professional management bot built for Free Fire Discord servers. Bringing structure, security, tournaments, and fun to your guild.</p>
+            </div>
+            
+            <div class="footer-links-column">
+                <span class="footer-column-title">Resources</span>
+                <ul class="footer-links">
+                    <li><a href="https://discord.gg/apos" target="_blank" class="footer-link">Invite Bot</a></li>
+                    <li><a href="support.html" class="footer-link">Support Server</a></li>
+                    <li><a href="../index.html#features" class="footer-link">Bot Features</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-column">
+                <span class="footer-column-title">Support</span>
+                <ul class="footer-links">
+                    <li><a href="support.html" class="footer-link">Help Center</a></li>
+                    <li><a href="support.html#faq" class="footer-link">FAQ</a></li>
+                    <li><a href="https://discord.gg/apos" target="_blank" class="footer-link">Discord Support</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-column">
+                <span class="footer-column-title">Legal</span>
+                <ul class="footer-links">
+                    <li><a href="privacy.html" class="footer-link">Privacy Policy</a></li>
+                    <li><a href="terms.html" class="footer-link">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Apostado Manager. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="privacy.html" class="footer-link">Privacy</a>
+                <a href="terms.html" class="footer-link">Terms</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Scroll back to top">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <!-- Main JS -->
+    <script src="../assets/js/main.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

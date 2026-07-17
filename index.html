@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- SEO Primary Meta Tags -->
+    <title>Apostado Manager | Premium Free Fire Discord Management Bot</title>
+    <meta name="title" content="Apostado Manager | Premium Free Fire Discord Management Bot">
+    <meta name="description" content="Manage your Free Fire Discord community with Apostado Manager. Automate matches, organize tournaments, coordinate squads, secure tickets, log stats, and manage staff seamlessly.">
+    <meta name="keywords" content="discord bot, free fire, tournament manager, squad management, ticket system, discord logger, discord security, moderation bot, apostado manager">
+    <meta name="author" content="Apostado Manager Team">
+    
+    <!-- OpenGraph (Facebook / Meta) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://discord.gg/apos">
+    <meta property="og:title" content="Apostado Manager | Premium Free Fire Discord Management Bot">
+    <meta property="og:description" content="Streamline Free Fire tournaments, matches, moderation, squads, tickets, and staff automation in your Discord server.">
+    <meta property="og:image" content="https://cdn.discordapp.com/icons/1376614588342341742/105e4bea65c423f10382c62469b911d5.png?size=256">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://discord.gg/apos">
+    <meta property="twitter:title" content="Apostado Manager | Premium Free Fire Discord Management Bot">
+    <meta property="twitter:description" content="Streamline Free Fire tournaments, matches, moderation, squads, tickets, and staff automation in your Discord server.">
+    <meta property="twitter:image" content="https://cdn.discordapp.com/icons/1376614588342341742/105e4bea65c423f10382c62469b911d5.png?size=256">
+
+    <!-- Theme & Icons -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#080710">
+    <meta name="msapplication-config" content="browserconfig.xml">
+    <link rel="icon" type="image/png" sizes="256x256" href="https://cdn.discordapp.com/icons/1376614588342341742/105e4bea65c423f10382c62469b911d5.png?size=256">
+    <link rel="apple-touch-icon" href="https://cdn.discordapp.com/icons/1376614588342341742/105e4bea65c423f10382c62469b911d5.png?size=256">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Icons (Lucide) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Preloader Screen -->
+    <div id="preloader" role="status" aria-label="Loading page">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-bar" id="progress-bar"></div>
+
+    <!-- Ambient Gradient Glow Overlays -->
+    <div class="ambient-glow"></div>
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Navigation Header -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo-wrapper" id="nav-logo-link">
+                <img src="https://cdn.discordapp.com/icons/1376614588342341742/105e4bea65c423f10382c62469b911d5.png?size=256" alt="Apostado Manager Logo" class="logo-img">
+                <span class="logo-text">Apostado Manager</span>
+            </a>
+            
+            <nav aria-label="Primary Navigation">
+                <ul class="nav-menu">
+                    <li><a href="index.html#features" class="nav-link">Features</a></li>
+                    <li><a href="index.html#stats" class="nav-link">Statistics</a></li>
+                    <li><a href="index.html#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="pages/support.html" class="nav-link">Support</a></li>
+                    <li><a href="https://discord.gg/apos" target="_blank" class="nav-btn btn-ripple" id="nav-discord-invite">Invite Bot</a></li>
+                </ul>
+            </nav>
+            
+            <button class="hamburger" id="nav-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <span class="hero-tagline">Elite Discord Guild Management</span>
+            <h1 class="hero-title">The Ultimate Free Fire <span>Management Bot</span> for Discord</h1>
+            <p class="hero-desc">Empower your Free Fire server with professional matches organization, squad management, automated leaderboards, advanced logs, anti-cheat security, and custom ticket systems.</p>
+            <div class="hero-cta">
+                <a href="https://discord.gg/apos" target="_blank" class="btn-premium btn-primary btn-ripple" id="hero-btn-add">
+                    <i data-lucide="plus-circle"></i> Add to Discord
+                </a>
+                <a href="pages/support.html" class="btn-premium btn-secondary btn-ripple" id="hero-btn-support">
+                    <i data-lucide="help-circle"></i> Get Support
+                </a>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats reveal" id="stats">
+            <div class="stats-grid">
+                <div class="stat-card" id="stat-servers">
+                    <div class="stat-number" data-target="1500" data-suffix="+">0</div>
+                    <div class="stat-label">Active Communities</div>
+                </div>
+                <div class="stat-card" id="stat-users">
+                    <div class="stat-number" data-target="450000" data-suffix="+">0</div>
+                    <div class="stat-label">Managed Players</div>
+                </div>
+                <div class="stat-card" id="stat-matches">
+                    <div class="stat-number" data-target="120000" data-suffix="+">0</div>
+                    <div class="stat-label">Matches Organized</div>
+                </div>
+                <div class="stat-card" id="stat-tickets">
+                    <div class="stat-number" data-target="85000" data-suffix="+">0</div>
+                    <div class="stat-label">Tickets Solved</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features" id="features">
+            <div class="section-header reveal">
+                <h2 class="section-title">Built to Elevate Your Server</h2>
+                <p class="section-desc">Handcrafted features designed specifically for Free Fire gaming guilds and organizers.</p>
+            </div>
+            
+            <div class="features-grid">
+                <!-- Moderation -->
+                <div class="feature-card reveal" id="feature-moderation">
+                    <div class="feature-icon"><i data-lucide="shield-check"></i></div>
+                    <h3 class="feature-card-title">Guild Moderation</h3>
+                    <p class="feature-card-desc">Advanced auto-moderation filters, punishment logging, user verification, and robust protection systems keeping toxic players out.</p>
+                </div>
+                
+                <!-- Tournaments -->
+                <div class="feature-card reveal" id="feature-tournaments">
+                    <div class="feature-icon"><i data-lucide="trophy"></i></div>
+                    <h3 class="feature-card-title">Tournaments & Matches</h3>
+                    <p class="feature-card-desc">Automatically create rooms, organize teams, schedule custom tournament brackets, and sync point systems seamlessly.</p>
+                </div>
+                
+                <!-- Squads -->
+                <div class="feature-card reveal" id="feature-squads">
+                    <div class="feature-icon"><i data-lucide="users"></i></div>
+                    <h3 class="feature-card-title">Squad & Clan System</h3>
+                    <p class="feature-card-desc">Allow players to create custom squads, manage roster sheets, invite members, and track wins/losses with automated leaderboards.</p>
+                </div>
+                
+                <!-- Tickets -->
+                <div class="feature-card reveal" id="feature-tickets">
+                    <div class="feature-icon"><i data-lucide="mail"></i></div>
+                    <h3 class="feature-card-title">Ticket System</h3>
+                    <p class="feature-card-desc">Fast, responsive support channels featuring transcripts, automated routing to custom staff roles, and panel-based configuration.</p>
+                </div>
+                
+                <!-- Audio Utilities -->
+                <div class="feature-card reveal" id="feature-voice">
+                    <div class="feature-icon"><i data-lucide="mic"></i></div>
+                    <h3 class="feature-card-title">Voice Channels</h3>
+                    <p class="feature-card-desc">Dynamic 'Join to Create' voice utilities that instantly spin up temporary, isolated voice channels for active games and squad matches.</p>
+                </div>
+                
+                <!-- Advanced Logging -->
+                <div class="feature-card reveal" id="feature-logs">
+                    <div class="feature-icon"><i data-lucide="database"></i></div>
+                    <h3 class="feature-card-title">Real-Time Logging</h3>
+                    <p class="feature-card-desc">Complete transparency logs monitoring points allocation, staff commands, rank updates, and squad creations in real-time.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq" id="faq">
+            <div class="section-header reveal">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-desc">Clear answers to common questions about Apostado Manager.</p>
+            </div>
+            
+            <div class="faq-container reveal">
+                <div class="faq-item" id="faq-q1">
+                    <button class="faq-question">
+                        <span>How do I add Apostado Manager to my Discord server?</span>
+                        <i data-lucide="plus" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Simply click the "Invite Bot" or "Add to Discord" buttons on our website. You will be redirected to Discord's official OAuth2 authorization portal. Grant the necessary permissions, select your target guild, and you are ready to configure.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" id="faq-q2">
+                    <button class="faq-question">
+                        <span>Is the bot customized for Free Fire communities?</span>
+                        <i data-lucide="plus" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, absolutely. Apostado Manager is uniquely crafted for Free Fire servers. It handles custom squad dynamics (1v1, 3v3, 4v4, 5v5), tournaments setups, customized rank prefixes, and points leaderboards matching Free Fire tournament formats.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" id="faq-q3">
+                    <button class="faq-question">
+                        <span>Can I configure helper bots to bypass Discord API rate limits?</span>
+                        <i data-lucide="plus" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. Our bot supports up to 5 helper bots via custom helper tokens. When points change and nicknames must be updated for large groups of players simultaneously, nickname updates are split across your active helper bots, keeping operations smooth and delay-free.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" id="faq-q4">
+                    <button class="faq-question">
+                        <span>Is the bot safe and secure?</span>
+                        <i data-lucide="plus" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. Apostado Manager uses state-of-the-art security checks. Command permissions are granularly controlled by your server administrators, and all sensitive actions (points changes, blacklists, match cancellation) are strictly authenticated and logged.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section reveal">
+            <div class="cta-box">
+                <h2 class="cta-title">Ready to Elevate Your Server?</h2>
+                <p class="cta-desc">Get the ultimate Discord companion for your Free Fire community. Start organizing, moderating, and growing your guild today.</p>
+                <a href="https://discord.gg/apos" target="_blank" class="btn-premium btn-primary btn-ripple" id="cta-btn-invite">
+                    <i data-lucide="rocket"></i> Invite Apostado Manager Now
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-info">
+                <a href="index.html" class="footer-info-logo" id="footer-logo-link">
+                    <img src="https://cdn.discordapp.com/icons/1376614588342341742/105e4bea65c423f10382c62469b911d5.png?size=256" alt="Apostado Manager Logo" class="logo-img" style="width:36px; height:36px;">
+                    <span class="logo-text" style="font-size:1.15rem;">Apostado Manager</span>
+                </a>
+                <p class="footer-desc">Professional management bot built for Free Fire Discord servers. Bringing structure, security, tournaments, and fun to your guild.</p>
+            </div>
+            
+            <div class="footer-links-column">
+                <span class="footer-column-title">Resources</span>
+                <ul class="footer-links">
+                    <li><a href="https://discord.gg/apos" target="_blank" class="footer-link">Invite Bot</a></li>
+                    <li><a href="pages/support.html" class="footer-link">Support Server</a></li>
+                    <li><a href="index.html#features" class="footer-link">Bot Features</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-column">
+                <span class="footer-column-title">Support</span>
+                <ul class="footer-links">
+                    <li><a href="pages/support.html" class="footer-link">Help Center</a></li>
+                    <li><a href="pages/support.html#faq" class="footer-link">FAQ</a></li>
+                    <li><a href="https://discord.gg/apos" target="_blank" class="footer-link">Discord Support</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-column">
+                <span class="footer-column-title">Legal</span>
+                <ul class="footer-links">
+                    <li><a href="pages/privacy.html" class="footer-link">Privacy Policy</a></li>
+                    <li><a href="pages/terms.html" class="footer-link">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Apostado Manager. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="pages/privacy.html" class="footer-link">Privacy</a>
+                <a href="pages/terms.html" class="footer-link">Terms</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Scroll back to top">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>

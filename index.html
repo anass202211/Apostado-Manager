@@ -5,33 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-    <!-- SEO Primary Meta Tags -->
-    <title>Apostado Manager | Premium Free Fire Discord Management Bot</title>
-    <meta name="title" content="Apostado Manager | Premium Free Fire Discord Management Bot">
-    <meta name="description" content="Manage your Free Fire Discord community with Apostado Manager. Automate matches, organize tournaments, coordinate squads, secure tickets, log stats, and manage staff seamlessly.">
-    <meta name="keywords" content="discord bot, free fire, tournament manager, squad management, ticket system, discord logger, discord security, moderation bot, apostado manager">
-    <meta name="author" content="Apostado Manager Team">
+    <!-- Primary SEO Metadata -->
+    <title>Apostado Manager | Professional Free Fire Discord Management Bot</title>
+    <meta name="title" content="Apostado Manager | Professional Free Fire Discord Management Bot">
+    <meta name="description" content="Apostado Manager is a premium private Discord bot built for Free Fire communities. Automate match registrations, log points, host brackets, manage squads, and secure your guild.">
+    <meta name="keywords" content="free fire discord bot, discord tourney manager, free fire bracket generator, discord squad registrar, private discord infrastructure">
+    <link rel="canonical" href="https://apos.gg/index.html">
+    
+    <!-- Preconnect Domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://unpkg.com">
+
+    <!-- Schema.org JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Apostado Manager",
+      "operatingSystem": "All",
+      "applicationCategory": "UtilitiesApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.00",
+        "priceCurrency": "USD"
+      },
+      "description": "Professional private Discord management bot built for Free Fire gaming communities.",
+      "softwareVersion": "2.4.0",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Apostado Manager Dev Team"
+      }
+    }
+    </script>
     
     <!-- OpenGraph (Facebook / Meta) -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://discord.gg/apos">
-    <meta property="og:title" content="Apostado Manager | Premium Free Fire Discord Management Bot">
+    <meta property="og:url" content="https://apos.gg/index.html">
+    <meta property="og:title" content="Apostado Manager | Professional Free Fire Discord Management Bot">
     <meta property="og:description" content="Streamline Free Fire tournaments, matches, moderation, squads, tickets, and staff automation in your Discord server.">
-    <meta property="og:image" content="https://cdn.discordapp.com/icons/1376614588342341742/105e4bea65c423f10382c62469b911d5.png?size=256">
+    <meta property="og:image" content="https://cdn.discordapp.com/icons/1376614588342341742/105e4bea65c423f10382c62469b911d5.png?size=512">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://discord.gg/apos">
-    <meta property="twitter:title" content="Apostado Manager | Premium Free Fire Discord Management Bot">
+    <meta property="twitter:url" content="https://apos.gg/index.html">
+    <meta property="twitter:title" content="Apostado Manager | Professional Free Fire Discord Management Bot">
     <meta property="twitter:description" content="Streamline Free Fire tournaments, matches, moderation, squads, tickets, and staff automation in your Discord server.">
-    <meta property="twitter:image" content="https://cdn.discordapp.com/icons/1376614588342341742/105e4bea65c423f10382c62469b911d5.png?size=256">
+    <meta property="twitter:image" content="https://cdn.discordapp.com/icons/1376614588342341742/105e4bea65c423f10382c62469b911d5.png?size=512">
 
-    <!-- Theme & Icons -->
+    <!-- PWA & Favicon Package -->
     <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#080710">
+    <meta name="theme-color" content="#030303">
     <meta name="msapplication-config" content="browserconfig.xml">
-    <link rel="icon" type="image/png" sizes="256x256" href="https://cdn.discordapp.com/icons/1376614588342341742/105e4bea65c423f10382c62469b911d5.png?size=256">
-    <link rel="apple-touch-icon" href="https://cdn.discordapp.com/icons/1376614588342341742/105e4bea65c423f10382c62469b911d5.png?size=256">
+    <link rel="icon" type="image/png" sizes="512x512" href="https://cdn.discordapp.com/icons/1376614588342341742/105e4bea65c423f10382c62469b911d5.png?size=512">
+    <link rel="apple-touch-icon" href="https://cdn.discordapp.com/icons/1376614588342341742/105e4bea65c423f10382c62469b911d5.png?size=512">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -48,15 +75,15 @@
     <!-- Scroll Progress Bar -->
     <div class="scroll-progress-bar" id="progress-bar"></div>
 
-    <!-- Ambient Gradient Glow Overlays -->
-    <div class="ambient-glow"></div>
-    <canvas id="bg-canvas"></canvas>
+    <!-- Ambient Visual Effects -->
+    <div class="aurora-bg"></div>
+    <div id="cursor-glow"></div>
 
     <!-- Navigation Header -->
     <header>
         <div class="nav-container">
             <a href="index.html" class="logo-wrapper" id="nav-logo-link">
-                <img src="https://cdn.discordapp.com/icons/1376614588342341742/105e4bea65c423f10382c62469b911d5.png?size=256" alt="Apostado Manager Logo" class="logo-img">
+                <img src="https://cdn.discordapp.com/icons/1376614588342341742/105e4bea65c423f10382c62469b911d5.png?size=512" alt="Apostado Manager Logo" class="logo-img">
                 <span class="logo-text">Apostado Manager</span>
             </a>
             
@@ -66,7 +93,7 @@
                     <li><a href="index.html#stats" class="nav-link">Statistics</a></li>
                     <li><a href="index.html#faq" class="nav-link">FAQ</a></li>
                     <li><a href="pages/support.html" class="nav-link">Support</a></li>
-                    <li><a href="https://discord.gg/apos" target="_blank" class="nav-btn btn-ripple" id="nav-discord-invite">Join Community</a></li>
+                    <li><a href="https://discord.gg/apos" target="_blank" class="nav-btn btn-ripple" id="nav-discord-join">Join Community</a></li>
                 </ul>
             </nav>
             
@@ -82,16 +109,75 @@
     <main>
         <!-- Hero Section -->
         <section class="hero" id="hero">
-            <span class="hero-tagline">Private Bot — Elite Guild Management</span>
-            <h1 class="hero-title">The Ultimate Free Fire <span>Management Bot</span> for Discord</h1>
-            <p class="hero-desc">Empower your Free Fire server with professional matches organization, squad management, automated leaderboards, advanced logs, anti-cheat security, and custom ticket systems.</p>
+            <span class="hero-tagline">Private Infrastructure</span>
+            <h1 class="hero-title">Automate Your Free Fire <span class="gradient-text">Guild System</span></h1>
+            <p class="hero-desc">Elevate your Discord server using Apostado Manager, the premium private bot built specifically for Free Fire organizers. Automated matches, stats tracking, anti-cheat rosters, and voice channels.</p>
             <div class="hero-cta">
-                <a href="https://discord.gg/apos" target="_blank" class="btn-premium btn-primary btn-ripple" id="hero-btn-add">
+                <a href="https://discord.gg/apos" target="_blank" class="btn-premium btn-primary btn-ripple" id="hero-btn-join">
                     <i data-lucide="users"></i> Join Community
                 </a>
                 <a href="pages/support.html" class="btn-premium btn-secondary btn-ripple" id="hero-btn-support">
                     <i data-lucide="help-circle"></i> Get Support
                 </a>
+            </div>
+
+            <!-- Discord Mockup Preview Area -->
+            <div class="dashboard-preview" id="discord-mockup">
+                <div class="discord-sidebar">
+                    <div class="discord-guild-icon active">AM</div>
+                    <div class="discord-guild-separator"></div>
+                    <div class="discord-guild-icon">FF</div>
+                </div>
+                <div class="discord-channels">
+                    <div class="discord-channels-header">Apostado Manager</div>
+                    <div class="discord-channels-list">
+                        <div class="discord-channel-item active">
+                            <i data-lucide="hash"></i> active-matches
+                        </div>
+                        <div class="discord-channel-item">
+                            <i data-lucide="hash"></i> points-leaderboard
+                        </div>
+                        <div class="discord-channel-item">
+                            <i data-lucide="hash"></i> tournament-brackets
+                        </div>
+                        <div class="discord-channel-item">
+                            <i data-lucide="hash"></i> ticket-logs
+                        </div>
+                    </div>
+                </div>
+                <div class="discord-chat">
+                    <div class="discord-chat-header">
+                        <i data-lucide="hash"></i> active-matches
+                    </div>
+                    <div class="discord-chat-messages">
+                        <div class="discord-message">
+                            <div class="discord-avatar" style="background:#5865F2; display:flex; justify-content:center; align-items:center; color:#fff; font-weight:bold; font-size:0.8rem;">BOT</div>
+                            <div class="discord-msg-content">
+                                <div class="discord-msg-author">Apostado Manager <span class="discord-msg-time">Today at 12:00 AM</span></div>
+                                <div class="discord-msg-text">Game result recorded successfully! Points allocated.</div>
+                                <div class="discord-embed">
+                                    <div class="discord-embed-title">Battle Finalization (Room: 57580297)</div>
+                                    <div class="discord-embed-desc">
+                                        <strong>Winner:</strong> Team 1 (60 Points)<br>
+                                        <strong>MVP:</strong> yassin_370165 (14 Kills)<br>
+                                        <strong>Log Status:</strong> Database updated successfully.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trusted Technologies Section -->
+        <section class="trusted-tech reveal">
+            <h3 class="tech-label">Trusted & Powered By</h3>
+            <div class="tech-row">
+                <span class="tech-item"><i data-lucide="database"></i> MongoDB</span>
+                <span class="tech-item"><i data-lucide="server"></i> Node.js</span>
+                <span class="tech-item"><i data-lucide="shield"></i> Discord.js</span>
+                <span class="tech-item"><i data-lucide="cpu"></i> Vercel</span>
             </div>
         </section>
 
@@ -100,71 +186,141 @@
             <div class="stats-grid">
                 <div class="stat-card" id="stat-servers">
                     <div class="stat-number" data-target="1500" data-suffix="+">0</div>
-                    <div class="stat-label">Active Communities</div>
+                    <div class="stat-label">Communities</div>
                 </div>
                 <div class="stat-card" id="stat-users">
                     <div class="stat-number" data-target="450000" data-suffix="+">0</div>
-                    <div class="stat-label">Managed Players</div>
+                    <div class="stat-label">Registered Players</div>
                 </div>
                 <div class="stat-card" id="stat-matches">
                     <div class="stat-number" data-target="120000" data-suffix="+">0</div>
-                    <div class="stat-label">Matches Organized</div>
+                    <div class="stat-label">Matches Tracked</div>
                 </div>
                 <div class="stat-card" id="stat-tickets">
                     <div class="stat-number" data-target="85000" data-suffix="+">0</div>
-                    <div class="stat-label">Tickets Solved</div>
+                    <div class="stat-label">Transcripts Generated</div>
                 </div>
             </div>
         </section>
 
-        <!-- Features Section -->
+        <!-- Features showcase -->
         <section class="features" id="features">
             <div class="section-header reveal">
-                <h2 class="section-title">Built to Elevate Your Server</h2>
-                <p class="section-desc">Handcrafted features designed specifically for Free Fire gaming guilds and organizers.</p>
+                <h2 class="section-title">Core Management Engine</h2>
+                <p class="section-desc">Everything you need to host professional, scalable Free Fire servers inside Discord.</p>
             </div>
             
             <div class="features-grid">
-                <!-- Moderation -->
-                <div class="feature-card reveal" id="feature-moderation">
-                    <div class="feature-icon"><i data-lucide="shield-check"></i></div>
-                    <h3 class="feature-card-title">Guild Moderation</h3>
-                    <p class="feature-card-desc">Advanced auto-moderation filters, punishment logging, user verification, and robust protection systems keeping toxic players out.</p>
+                <!-- Custom Matchmaking -->
+                <div class="feature-card tilt-card reveal" id="feature-matchmaking">
+                    <div class="feature-icon-wrapper"><i data-lucide="crosshair"></i></div>
+                    <h3>Automated Matchmaking</h3>
+                    <p>Setup squad matching structures (1v1 to 5v5), manage player listings, track rosters, and log battle outcomes automatically.</p>
                 </div>
                 
-                <!-- Tournaments -->
-                <div class="feature-card reveal" id="feature-tournaments">
-                    <div class="feature-icon"><i data-lucide="trophy"></i></div>
-                    <h3 class="feature-card-title">Tournaments & Matches</h3>
-                    <p class="feature-card-desc">Automatically create rooms, organize teams, schedule custom tournament brackets, and sync point systems seamlessly.</p>
+                <!-- Anti-Cheat Security -->
+                <div class="feature-card tilt-card reveal" id="feature-security">
+                    <div class="feature-icon-wrapper"><i data-lucide="shield-alert"></i></div>
+                    <h3>Roster Validation</h3>
+                    <p>Block double registrations, blacklist suspicious accounts, and sync client tags immediately using advanced backend query systems.</p>
                 </div>
                 
-                <!-- Squads -->
-                <div class="feature-card reveal" id="feature-squads">
-                    <div class="feature-icon"><i data-lucide="users"></i></div>
-                    <h3 class="feature-card-title">Squad & Clan System</h3>
-                    <p class="feature-card-desc">Allow players to create custom squads, manage roster sheets, invite members, and track wins/losses with automated leaderboards.</p>
+                <!-- Performance Stats -->
+                <div class="feature-card tilt-card reveal" id="feature-performance">
+                    <div class="feature-icon-wrapper"><i data-lucide="zap"></i></div>
+                    <h3>Helper Bot Clusters</h3>
+                    <p>Distribute user nickname rank updates across up to 5 helper bots, completely bypassing Discord's API rate limits.</p>
                 </div>
                 
-                <!-- Tickets -->
-                <div class="feature-card reveal" id="feature-tickets">
-                    <div class="feature-icon"><i data-lucide="mail"></i></div>
-                    <h3 class="feature-card-title">Ticket System</h3>
-                    <p class="feature-card-desc">Fast, responsive support channels featuring transcripts, automated routing to custom staff roles, and panel-based configuration.</p>
+                <!-- Ticket System -->
+                <div class="feature-card tilt-card reveal" id="feature-tickets">
+                    <div class="feature-icon-wrapper"><i data-lucide="mail"></i></div>
+                    <h3>Interactive Tickets</h3>
+                    <p>Provide swift customer support with button-created channels, private staff routers, and automated logs storage.</p>
                 </div>
                 
-                <!-- Audio Utilities -->
-                <div class="feature-card reveal" id="feature-voice">
-                    <div class="feature-icon"><i data-lucide="mic"></i></div>
-                    <h3 class="feature-card-title">Voice Channels</h3>
-                    <p class="feature-card-desc">Dynamic 'Join to Create' voice utilities that instantly spin up temporary, isolated voice channels for active games and squad matches.</p>
+                <!-- Dynamic Voice Channels -->
+                <div class="feature-card tilt-card reveal" id="feature-voice">
+                    <div class="feature-icon-wrapper"><i data-lucide="phone-call"></i></div>
+                    <h3>Dynamic Voice Channels</h3>
+                    <p>Instantly spin up voice channels for squads that auto-delete after the team leaves, keeping your channels list clean.</p>
                 </div>
                 
-                <!-- Advanced Logging -->
-                <div class="feature-card reveal" id="feature-logs">
-                    <div class="feature-icon"><i data-lucide="database"></i></div>
-                    <h3 class="feature-card-title">Real-Time Logging</h3>
-                    <p class="feature-card-desc">Complete transparency logs monitoring points allocation, staff commands, rank updates, and squad creations in real-time.</p>
+                <!-- Ranks Sync -->
+                <div class="feature-card tilt-card reveal" id="feature-ranks">
+                    <div class="feature-icon-wrapper"><i data-lucide="star"></i></div>
+                    <h3>Leaderboard & Points</h3>
+                    <p>Real-time player leaderboards ranking members automatically and assigning custom rank prefixes based on database stats.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Security Showcase Section -->
+        <section class="showcase-sec" id="security-showcase">
+            <div class="showcase-container reveal">
+                <div class="showcase-visual">
+                    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="40" stroke="#5865F2" stroke-width="2" stroke-dasharray="5 5" />
+                        <rect x="35" y="45" width="30" height="24" rx="4" fill="#0e0e12" stroke="#5865F2" stroke-width="3" />
+                        <path d="M42 45V36C42 31.58 45.58 28 50 28C54.42 28 58 31.58 58 36V45" stroke="#5865F2" stroke-width="3" />
+                        <circle cx="50" cy="57" r="3" fill="#5865F2" />
+                    </svg>
+                </div>
+                <div class="showcase-info">
+                    <h2>Enterprise-Grade Security</h2>
+                    <p>Apostado Manager is built on private dedicated infrastructure, ensuring your server configurations, points logs, and community rosters are completely secure.</p>
+                    <div class="showcase-points">
+                        <div class="showcase-point">
+                            <i data-lucide="shield-check" class="showcase-point-icon"></i>
+                            <div class="showcase-point-text">
+                                <h4>Granular Permissions</h4>
+                                <p>Restrict points modification, match cancellations, and configurations edits using custom role permissions.</p>
+                            </div>
+                        </div>
+                        <div class="showcase-point">
+                            <i data-lucide="lock" class="showcase-point-icon"></i>
+                            <div class="showcase-point-text">
+                                <h4>Anti-Bypass Roster Logs</h4>
+                                <p>Every single points change or player removal leaves a permanent log entry that staff cannot alter.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Performance Section -->
+        <section class="showcase-sec" id="performance-showcase" style="border-top:none;">
+            <div class="showcase-container reveal">
+                <div class="showcase-info">
+                    <h2>Sub-Millisecond Execution</h2>
+                    <p>Powered by Node.js worker pools and multi-token bot clients, Apostado Manager updates ranks and resolves commands under 150ms.</p>
+                    <div class="showcase-points">
+                        <div class="showcase-point">
+                            <i data-lucide="zap" class="showcase-point-icon"></i>
+                            <div class="showcase-point-text">
+                                <h4>Helper Bot Threading</h4>
+                                <p>Spreads heavy operations (like updating 10 player nicknames simultaneously) across multiple worker threads to keep latency minimal.</p>
+                            </div>
+                        </div>
+                        <div class="showcase-point">
+                            <i data-lucide="refresh-cw" class="showcase-point-icon"></i>
+                            <div class="showcase-point-text">
+                                <h4>MongoDB Indexing</h4>
+                                <p>Optimized indexes on player points and squad lists guarantee instant leaderboard retrievals.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase-visual">
+                    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 80H85" stroke="#7209b7" stroke-width="3" stroke-linecap="round" />
+                        <path d="M20 70L40 45L60 55L80 20" stroke="#7209b7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                        <circle cx="20" cy="70" r="4" fill="#f72585" />
+                        <circle cx="40" cy="45" r="4" fill="#f72585" />
+                        <circle cx="60" cy="55" r="4" fill="#f72585" />
+                        <circle cx="80" cy="20" r="4" fill="#f72585" />
+                    </svg>
                 </div>
             </div>
         </section>
@@ -173,13 +329,13 @@
         <section class="faq" id="faq">
             <div class="section-header reveal">
                 <h2 class="section-title">Frequently Asked Questions</h2>
-                <p class="section-desc">Clear answers to common questions about Apostado Manager.</p>
+                <p class="section-desc">Clear answers to questions regarding configurations, limits, and server setup.</p>
             </div>
             
             <div class="faq-container reveal">
                 <div class="faq-item" id="faq-q1">
                     <button class="faq-question">
-                        <span>How do I get access to Apostado Manager for my Discord server?</span>
+                        <span>How do I request Apostado Manager for my server?</span>
                         <i data-lucide="plus" class="faq-icon"></i>
                     </button>
                     <div class="faq-answer">
@@ -189,31 +345,31 @@
 
                 <div class="faq-item" id="faq-q2">
                     <button class="faq-question">
-                        <span>Is the bot customized for Free Fire communities?</span>
+                        <span>How do helper bots bypass API limits?</span>
                         <i data-lucide="plus" class="faq-icon"></i>
                     </button>
                     <div class="faq-answer">
-                        <p>Yes, absolutely. Apostado Manager is uniquely crafted for Free Fire servers. It handles custom squad dynamics (1v1, 3v3, 4v4, 5v5), tournaments setups, customized rank prefixes, and points leaderboards matching Free Fire tournament formats.</p>
+                        <p>Discord enforces rate limits on updating user nicknames inside a guild. By utilizing up to 5 helper bot tokens, Apostado Manager distributes nickname adjustments using consistent hashing (based on user IDs), dividing the rate limit load across different client sessions.</p>
                     </div>
                 </div>
 
                 <div class="faq-item" id="faq-q3">
                     <button class="faq-question">
-                        <span>Can I configure helper bots to bypass Discord API rate limits?</span>
+                        <span>Are ticket transcripts stored securely?</span>
                         <i data-lucide="plus" class="faq-icon"></i>
                     </button>
                     <div class="faq-answer">
-                        <p>Yes. Our bot supports up to 5 helper bots via custom helper tokens. When points change and nicknames must be updated for large groups of players simultaneously, nickname updates are split across your active helper bots, keeping operations smooth and delay-free.</p>
+                        <p>Yes. Closed ticket transcripts are stored securely inside our firewalled MongoDB instances. Only whitelisted staff roles within your specific server have permission to request and read transcripts.</p>
                     </div>
                 </div>
 
                 <div class="faq-item" id="faq-q4">
                     <button class="faq-question">
-                        <span>Is the bot safe and secure?</span>
+                        <span>Does the bot support custom match rules?</span>
                         <i data-lucide="plus" class="faq-icon"></i>
                     </button>
                     <div class="faq-answer">
-                        <p>Yes. Apostado Manager uses state-of-the-art security checks. Command permissions are granularly controlled by your server administrators, and all sensitive actions (points changes, blacklists, match cancellation) are strictly authenticated and logged.</p>
+                        <p>Yes, administrators can configure custom point systems, tournament settings, matchmaking sizes (1v1, 3v3, 4v4, 5v5), and voice channels configuration through command parameters.</p>
                     </div>
                 </div>
             </div>
@@ -222,10 +378,10 @@
         <!-- CTA Section -->
         <section class="cta-section reveal">
             <div class="cta-box">
-                <h2 class="cta-title">Ready to Elevate Your Server?</h2>
-                <p class="cta-desc">Get the ultimate Discord companion for your Free Fire community. Start organizing, moderating, and growing your guild today.</p>
-                <a href="https://discord.gg/apos" target="_blank" class="btn-premium btn-primary btn-ripple" id="cta-btn-invite">
-                    <i data-lucide="users"></i> Join Our Community
+                <h2 class="cta-title">Upgrade Your Free Fire Guild</h2>
+                <p class="cta-desc">Join our official Discord community to request whitelisted access for your community server today.</p>
+                <a href="https://discord.gg/apos" target="_blank" class="btn-premium btn-primary btn-ripple" id="cta-btn-join-com">
+                    <i data-lucide="users"></i> Join Official Community
                 </a>
             </div>
         </section>
@@ -236,8 +392,8 @@
         <div class="footer-grid">
             <div class="footer-info">
                 <a href="index.html" class="footer-info-logo" id="footer-logo-link">
-                    <img src="https://cdn.discordapp.com/icons/1376614588342341742/105e4bea65c423f10382c62469b911d5.png?size=256" alt="Apostado Manager Logo" class="logo-img" style="width:36px; height:36px;">
-                    <span class="logo-text" style="font-size:1.15rem;">Apostado Manager</span>
+                    <img src="https://cdn.discordapp.com/icons/1376614588342341742/105e4bea65c423f10382c62469b911d5.png?size=512" alt="Apostado Manager Logo" class="logo-img">
+                    <span class="logo-text">Apostado Manager</span>
                 </a>
                 <p class="footer-desc">Professional management bot built for Free Fire Discord servers. Bringing structure, security, tournaments, and fun to your guild.</p>
             </div>
@@ -286,7 +442,6 @@
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
     <script>
-        // Initialize Lucide icons
         lucide.createIcons();
     </script>
 </body>

@@ -9,11 +9,17 @@
     <title>404 - Page Not Found | Apostado Manager</title>
     <meta name="title" content="404 - Page Not Found | Apostado Manager">
     <meta name="description" content="The page you are looking for does not exist. Return home or contact support.">
+    <link rel="canonical" href="https://apos.gg/404.html">
     
+    <!-- Preconnect Domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://unpkg.com">
+
     <!-- Theme & Icons -->
     <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#080710">
-    <link rel="icon" type="image/png" href="https://cdn.discordapp.com/icons/1376614588342341742/105e4bea65c423f10382c62469b911d5.png?size=256">
+    <meta name="theme-color" content="#030303">
+    <link rel="icon" type="image/png" sizes="512x512" href="https://cdn.discordapp.com/icons/1376614588342341742/105e4bea65c423f10382c62469b911d5.png?size=512">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -27,15 +33,15 @@
         <div class="spinner"></div>
     </div>
 
-    <!-- Ambient Glow Overlays -->
-    <div class="ambient-glow"></div>
-    <canvas id="bg-canvas"></canvas>
+    <!-- Ambient Visual Effects -->
+    <div class="aurora-bg"></div>
+    <div id="cursor-glow"></div>
 
     <!-- Navigation Header -->
     <header>
         <div class="nav-container">
             <a href="index.html" class="logo-wrapper" id="nav-logo-link">
-                <img src="https://cdn.discordapp.com/icons/1376614588342341742/105e4bea65c423f10382c62469b911d5.png?size=256" alt="Apostado Manager Logo" class="logo-img">
+                <img src="https://cdn.discordapp.com/icons/1376614588342341742/105e4bea65c423f10382c62469b911d5.png?size=512" alt="Apostado Manager Logo" class="logo-img">
                 <span class="logo-text">Apostado Manager</span>
             </a>
             
@@ -45,7 +51,7 @@
                     <li><a href="index.html#stats" class="nav-link">Statistics</a></li>
                     <li><a href="index.html#faq" class="nav-link">FAQ</a></li>
                     <li><a href="pages/support.html" class="nav-link">Support</a></li>
-                    <li><a href="https://discord.gg/apos" target="_blank" class="nav-btn btn-ripple" id="nav-discord-invite">Join Community</a></li>
+                    <li><a href="https://discord.gg/apos" target="_blank" class="nav-btn btn-ripple" id="nav-discord-join">Join Community</a></li>
                 </ul>
             </nav>
             
@@ -72,8 +78,8 @@
         <div class="footer-grid">
             <div class="footer-info">
                 <a href="index.html" class="footer-info-logo" id="footer-logo-link">
-                    <img src="https://cdn.discordapp.com/icons/1376614588342341742/105e4bea65c423f10382c62469b911d5.png?size=256" alt="Apostado Manager Logo" class="logo-img" style="width:36px; height:36px;">
-                    <span class="logo-text" style="font-size:1.15rem;">Apostado Manager</span>
+                    <img src="https://cdn.discordapp.com/icons/1376614588342341742/105e4bea65c423f10382c62469b911d5.png?size=512" alt="Apostado Manager Logo" class="logo-img">
+                    <span class="logo-text">Apostado Manager</span>
                 </a>
                 <p class="footer-desc">Professional management bot built for Free Fire Discord servers. Bringing structure, security, tournaments, and fun to your guild.</p>
             </div>
@@ -109,7 +115,7 @@
             <p>&copy; 2026 Apostado Manager. All rights reserved.</p>
             <div class="footer-bottom-links">
                 <a href="pages/privacy.html" class="footer-link">Privacy</a>
-                <a href="pages/terms.html" class="footer-link">Terms</a>
+                <a href="terms.html" class="footer-link">Terms</a>
             </div>
         </div>
     </footer>

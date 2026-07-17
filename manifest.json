@@ -3,14 +3,14 @@
   "name": "Apostado Manager | Free Fire Discord Bot",
   "icons": [
     {
-      "src": "https://cdn.discordapp.com/icons/1376614588342341742/105e4bea65c423f10382c62469b911d5.png?size=256",
-      "sizes": "256x256",
+      "src": "https://cdn.discordapp.com/icons/1376614588342341742/105e4bea65c423f10382c62469b911d5.png?size=512",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ],
   "start_url": "/index.html",
-  "background_color": "#080710",
-  "theme-color": "#080710",
+  "background_color": "#030303",
+  "theme-color": "#030303",
   "display": "standalone",
   "orientation": "portrait"
 }
